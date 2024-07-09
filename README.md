@@ -1,6 +1,6 @@
 # Kinoteca Client
 
-# Описание
+## Описание
 Микросервис для маршрутизации запросов в микросервис [KinotecaParser](https://github.com/navI-minkoff/KinotecaParser) для интеграции c [API Кинопоиска](https://api.kinopoisk.dev/documentation)
 ## Используемые технологии
 - Spring Boot

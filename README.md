@@ -1,36 +1,22 @@
-# Kinoteca Parser
+# Kinoteca Client
 
-
-Микросервис для маршрутизации запросов в микросервис [KinotecaClient](https://github.com/navI-minkoff/KinotecaClient) для интеграции c [API Кинопоиска](https://api.kinopoisk.dev/documentation)
+# Описание
+Микросервис для маршрутизации запросов в микросервис [KinotecaParser](https://github.com/navI-minkoff/KinotecaParser) для интеграции c [API Кинопоиска](https://api.kinopoisk.dev/documentation)
 ## Используемые технологии
 - Spring Boot
 - Spring Web
-- Spring Test
 - Spring Cloud OpenFeign
-- Spring Data JPA
-- Liquibase
-- PostgreSQL
+- SpringDoc OpenAPI (Swagger)
 - Lombok
 
 ## Использование
-1. В `application.yaml` установите личный токен для подключения к [API Кинопоиска](https://api.kinopoisk.dev/documentation). Получить токен можно [здесь](https://t.me/kinopoiskdev_bot).
+1. Установите значениe `base-url` для подключения к микросервису [KinotecaParser](https://github.com/navI-minkoff/KinotecaParser):
     ```yaml
-    kinopoisk-api:
-      key: your_token_here
+    kinopoisk-parser:
+        base-url: your_parser_url
     ```
-2. Установите значения для подключения к базе данных:
-    ```yaml
-   spring:
-    datasource:
-      driver-class-name: your_database_driver_class_name
-      url: your_database_url
-      username: your_database_url
-      password: your_database_password
-    ```
-3. Запустить микросервис [KinotecaClient](https://github.com/navI-minkoff/KinotecaClient).
 
 ## Документация API
 После запуска 2-х микросервисов, документация API будет доступна по следующему адресу:
-```
-http://localhost:8082/swagger-ui/index.html
-```
+> http://localhost:8082/swagger-ui/index.html
+

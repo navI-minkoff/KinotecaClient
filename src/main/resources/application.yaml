@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: KinotecaClient
+server:
+  port: 8082
+springdoc:
+  api-docs:
+    path: /kinoteca/api
+application:
+  base-url: /documentation/api
+kinopoisk-parser:
+  base-url: http://localhost:8081/info/movies
